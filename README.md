@@ -7,6 +7,7 @@ Features:
   - Ability to pull popular gifs from inside app
   - Material design UI made in XAML
   - Preview wallpaper in app before
+  - Correct interval during frames
 
 
 > Feel free to use any
