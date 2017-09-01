@@ -1,0 +1,18 @@
+﻿<UserControl x:Class="gif2Wallpaper.embeddedGif"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:gif="http://wpfanimatedgif.codeplex.com"
+             xmlns:local="clr-namespace:gif2Wallpaper"
+             mc:Ignorable="d" 
+             d:DesignHeight="480" d:DesignWidth="770">
+    <Grid>
+        <StackPanel>
+            <Image x:Name="gifContainer" gif:ImageBehavior.AnimatedSource="https://github.com/pikao233/gif2wallpaper/blob/master/media/spinner.gif?raw=true" Height="425"/>
+            <Button x:Name="confirmGifChoice" Margin="150,10" Click="confirmGifChoice_Click" Visibility="Hidden">
+                CONFIRM
+            </Button>
+        </StackPanel>
+    </Grid>
+</UserControl>
