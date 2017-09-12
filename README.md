@@ -21,7 +21,7 @@ Feel free to file a pull request, on the "references.txt" file , just please don
 
 ### Credits for development: 
 
-    pikao233 for all programming work
+    peaches6 for all programming work
     http://materialdesigninxaml.net
     https://stackoverflow.com/
     
