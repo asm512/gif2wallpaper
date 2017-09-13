@@ -57,6 +57,7 @@ namespace gif2Wallpaper
 
             string[] wallpapers = Directory.GetFiles(@"extractedFrames");
             int countedWallpapers = wallpapers.Length;
+            File.WriteAllLines("imglist.txt", wallpapers);
             int x = 0;
 
             if(settings.Read("customInterval")=="false")
@@ -68,13 +69,13 @@ namespace gif2Wallpaper
             }
 
 
-
+            var lineCount = File.ReadAllLines("imglist.txt").Count();
             var wallpaperTimer = new Timer { Interval = Convert.ToInt32(settings.Read("customInterval")) };
             wallpaperTimer.Tick += (o, args) =>
             {
                 foreach (string wallpaper in wallpapers)
                 {
-                    if (x >= countedWallpapers)
+                    if (x >= lineCount)
                     {
                         x = 0;
                     }
